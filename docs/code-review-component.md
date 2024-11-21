@@ -1,15 +1,54 @@
 # Component Building Block
 
-## Code Review Component
+## Code Review op een RAPPE Component
 
-Review de componenten van andere teams
-
+Review de componenten van een andere groep.
 
 ### Aanpak
 
-Review de componenten op de huisstijl en hoe het  responsive, performance, toegankelijk en progressive enhanced is uitgewerkt. 
+Deze week hebben jullie verder gewerkt om jullie component helemaal compleet te maken op alle stappen van RAPPE, Responsive, Accesible, Performant & Progressive Enhanced. Vanddaag gaan jullie de componenten van andere een tijdelijke groep reviewen. 
 
+### Voorbereiding
 
+- Zorg dat het component live staat, of dat er in de readme duidelijke instructies staan om het lokaal op te starten
+- Post daarna het volgende in de post in channel 16 als 1 comment:
+  - De link van je repo
+  - Benoem 1 onderdeel waar je trots op bent in je component
+  - Benoem 1 onderdeel waar je feedback op wilt
+
+### Code review met elkaar
+
+Review het team dat onder jou staat op het bord en volg de onderstaande checklist. De review doe je met je hele groep en je gaat alle componenten samen langs. Schiet waar nodig een duidelijk omschreven issue in. Let daarbij op een goede titel, duidelijke omschrijving van de verbetering en geef waar nodig een bron of een stukje voorbeeld code.
+
+- Is het Responsive
+- Is het Accessible
+- Is het Performant
+- Is het Progressive Enhanced
+- Is het DRY code, goed te volgen, netjes opgezet etc.
+
+<!--
+Suus en Dorien maken groepjes
+
+Waar op letten:
+- Whitespace
+- Modular scale
+- Lettertypes
+- Heb je verschillende versies gemaakt, wat maakte de doorslag
+
+- Container queries
+- RAPPE Responsive Accesible Performant Progressive Enhanced
+- DRY
+- Code kwaliteit
+- Heb je alle testen gedaan
+
+In de tussentijd:
+- De groepjes geven een ander team een code review
+- Noemen 1 onderdeel waar ze super trots op zijn
+- Noemen 1 onderdeel waarvan ze weten dat het nog beter kan
+
+3 docententeams
+
+-->
 #### Code review
 
 ...
