@@ -28,9 +28,7 @@ Review het team dat onder jou staat op het bord en volg de onderstaande checklis
 
 ### Code review met docenten
 
-Justus - Suus: zitten bij zwarte tafel achterin
-Krijn - Cyd: zitten bij zwarte tafel voorin
-Joost - Dorien: zitten bij het extra scherm
+Justus - Suus: zitten bij zwarte tafel achterin, Krijn - Cyd: zitten bij zwarte tafel voorin, Joost - Dorien: zitten bij het extra scherm
 
 Docenten checken de code op:
 - Opzet, mappenstructuur
