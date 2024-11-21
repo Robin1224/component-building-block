@@ -6,7 +6,7 @@ Review de componenten van een andere groep.
 
 ### Aanpak
 
-Deze week hebben jullie verder gewerkt om jullie component helemaal compleet te maken op alle stappen van RAPPE, Responsive, Accesible, Performant & Progressive Enhanced. Vanddaag gaan jullie de componenten van andere een tijdelijke groep reviewen. 
+Deze week hebben jullie verder gewerkt om jullie component helemaal compleet te maken op alle stappen van RAPPE, Responsive, Accessible, Performant & Progressive Enhanced. Vanddaag gaan jullie de componenten van andere een tijdelijke groep reviewen. 
 
 ### Voorbereiding
 
