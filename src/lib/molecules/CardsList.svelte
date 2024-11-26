@@ -22,22 +22,23 @@
 
   ul {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 1rem 0;
     container-type: inline-size;
+    container-name: cards-grid;
   }
 
-  @media screen and (min-width: 36em) {
+  @media screen and (min-width: 730px) {
     ul {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
       gap: 1.5rem;
     }
   }
 
-  @media screen and (min-width: 60em) {
+  /* @media screen and (min-width: 60em) {
     ul {
       grid-template-columns: repeat(3, auto);
     }
-  }
+  } */
 </style>

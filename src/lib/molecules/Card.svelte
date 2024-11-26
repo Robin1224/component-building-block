@@ -33,6 +33,8 @@
   li {
     list-style: none;
     width: 100%;
+    container-type: inline-size;
+    container-name: card;
   }
 
   a {
@@ -100,7 +102,7 @@
     width: auto;
   }
 
-  @container (min-width: 36rem) {
+  @container cards-grid (min-width: 730px) {
     li {
       border: solid 2px var(--vtYellow);
       border-radius: 0.8rem;
@@ -150,6 +152,21 @@
       display: block;
       width: 100%;
       height: 2px;
+    }
+  }
+
+  @container card (max-width: 460px) {
+    button {
+      margin-bottom: 0.4rem;
+      margin-right: 0.6rem;
+      margin-left: auto;
+      border-radius: 0.4rem;
+
+      width: 0.8rem;
+    }
+
+    button > span {
+      display: none;
     }
   }
 </style>
