@@ -22,9 +22,10 @@
     {/if}
 
     <h3>{method.title}</h3>
-    <Button className="card-button">
-      <Arrows styles="transform: translateY(2px) translateX(1px);" />
-    </Button>
+    <button>
+      <span>MEER LEZEN</span>
+      <Arrows />
+    </button>
   </a>
 </li>
 
@@ -37,9 +38,9 @@
   a {
     text-decoration: none;
     color: black;
-    margin-bottom: 5px;
-    padding: 0.8em;
+    padding: 2rem 1rem;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: 10rem 1fr;
     grid-template-rows: 1fr 1fr;
@@ -51,6 +52,8 @@
   img {
     width: 10rem;
     height: auto;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 
     grid-area: img;
   }
@@ -61,19 +64,92 @@
     font-size: 24px;
     font-weight: 400;
     margin: 0;
+    /* margin-top: auto; */
     width: 100%;
     padding-left: 1rem;
 
     grid-area: title;
   }
 
-  :global(.card-button) {
-    margin-left: auto;
+  button {
+    background-color: var(--vtYellow);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    height: fit-content;
+    min-width: fit-content;
+    max-width: 12rem;
+    font-family: var(--vtPrimaryFont);
+    color: var(--vtDarkBlue);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
     margin-top: auto;
 
     grid-area: button;
   }
 
+  button > span {
+    margin-right: 0.2rem;
+  }
+
+  button :global(.icon-arrows) {
+    transform: translateY(1px);
+    height: 0.8rem;
+    width: auto;
+  }
+
   @container (min-width: 36rem) {
+    li {
+      border: solid 2px var(--vtYellow);
+      border-radius: 0.8rem;
+      width: 16rem;
+      overflow: hidden;
+    }
+
+    a {
+      border: none;
+      grid-template-columns: auto auto;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "img img"
+        "title button";
+      padding: 0;
+    }
+
+    img {
+      width: 16rem;
+      height: auto;
+      border-radius: 0px;
+      border: none;
+      border-bottom: 1px solid var(--vtYellow);
+      margin-bottom: 0.4rem;
+    }
+
+    button {
+      margin-bottom: 0.4rem;
+      margin-right: 0.6rem;
+      margin-left: auto;
+      border-radius: 0.4rem;
+
+      width: 0.8rem;
+    }
+
+    button > span {
+      display: none;
+    }
+
+    h3 {
+      position: relative;
+    }
+
+    h3::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+    }
   }
 </style>

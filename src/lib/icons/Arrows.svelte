@@ -2,7 +2,7 @@
   export let styles = "";
 </script>
 
-<svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg" style={styles}>
+<svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrows">
   <path d="M15.4877 -0.0222168H19.3193L25.614 10.4778L19.3193 20.9778H15.4877L21.7824 10.4778L15.4877 -0.0222168Z" fill="#090940"/>
   <path d="M7.96133 -0.0222168H11.7929L18.0876 10.4778L11.7929 20.9778H7.96133L14.2561 10.4778L7.96133 -0.0222168Z" fill="#090940"/>
   <path d="M0.434962 -0.0222168H4.26654L10.5613 10.4778L4.26654 20.9778H0.434962L6.7297 10.4778L0.434962 -0.0222168Z" fill="#090940"/>
