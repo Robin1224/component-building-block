@@ -10,8 +10,6 @@
     {#if method.template && method.template.url}
       <picture
         loading="lazy"
-        alt={"Voorbeeld van " + method.title}
-        class={method.categories[0].title.replaceAll(" ", "-")}
       >
         <source
           srcset={method.template.url.replace(":webp", ":avif")}
@@ -21,12 +19,12 @@
         <img
           loading="lazy"
           src={method.template.url.replace(":webp", ":png")}
+          alt={"Voorbeeld van " + method.title}
         />
       </picture>
     {:else}
       <img
         loading="lazy"
-        class={method.categories[0].title.replaceAll(" ", "-")}
         src="/placeholder.webp"
         alt="Placeholder"
       />
@@ -60,20 +58,26 @@
     border-bottom: 1px solid #ccc;
     margin-bottom: 0;
     display: grid;
-    grid-template-columns: 10rem 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "img title"
       "img button";
   }
 
-  img {
-    width: 10rem;
+  picture {
+    width: 8rem;
     height: auto;
     border-radius: 3px;
     border: 1px solid #ccc;
+    overflow: hidden;
 
     grid-area: img;
+  }
+
+  img {
+    width: 8rem;
+    height: auto;
   }
 
   h3 {
@@ -90,7 +94,7 @@
   }
 
   button {
-    background-color: var(--vtYellow);
+    background-color: var(--vtYellow-80);
     padding: 0.4rem 0.8rem;
     cursor: pointer;
     border-radius: 3px;
@@ -110,7 +114,7 @@
   }
 
   button:hover {
-    background-color: var(--vtYellow-80);
+    background-color: var(--vtYellow);
   }
 
   button > span:nth-child(2) {
@@ -141,13 +145,18 @@
       padding: 0;
     }
 
-    img {
+    picture {
       width: 16rem;
       height: auto;
       border-radius: 0px;
       border: none;
       border-bottom: 1px solid var(--vtYellow);
       margin-bottom: 0.4rem;
+    }
+
+    img {
+      width: 16rem;
+      height: auto;
     }
 
     button {
