@@ -25,7 +25,7 @@
 
     <h3>{method.title}</h3>
     <button>
-      <span>MEER LEZEN</span>
+      <span>MEER </span><span>LEZEN</span>
       <Arrows />
     </button>
   </a>
@@ -37,6 +37,11 @@
     width: 100%;
     container-type: inline-size;
     container-name: card;
+    transition: background-color 0.2s;
+  }
+
+  li:hover {
+    background-color: #f3f3f3;
   }
 
   a {
@@ -90,11 +95,16 @@
     font-weight: 400;
     margin-left: 1rem;
     margin-top: auto;
+    transition: background-color 0.2s;
 
     grid-area: button;
   }
 
-  button > span {
+  button:hover { 
+    background-color: var(--vtYellow-80);
+  }
+
+  button > span:nth-child(2) {
     margin-right: 0.2rem;
   }
 
@@ -157,7 +167,7 @@
     }
   }
 
-  @container card (max-width: 460px) {
+  @container card (max-width: 480px) {
     button {
       margin-bottom: 0.4rem;
       margin-right: 0.6rem;
@@ -166,6 +176,13 @@
 
       width: 0.8rem;
     }
+
+    button > span:nth-child(2) {
+      display: none;
+    }
+  }
+
+  @container card (max-width: 420px) {
 
     button > span {
       display: none;
