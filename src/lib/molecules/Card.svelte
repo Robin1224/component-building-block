@@ -9,12 +9,14 @@
   <a href="/tekenmethodes/{method.slug}">
     {#if method.template && method.template.url}
       <img
+        loading="lazy"
         src={method.template.url.replace(":webp", ":png")}
         alt={"Voorbeeld van " + method.title}
         class={method.categories[0].title.replaceAll(" ", "-")}
       />
     {:else}
       <img
+        loading="lazy"
         class={method.categories[0].title.replaceAll(" ", "-")}
         src="/placeholder.webp"
         alt="Placeholder"
