@@ -8,12 +8,21 @@
 <li>
   <a href="/tekenmethodes/{method.slug}">
     {#if method.template && method.template.url}
-      <img
+      <picture
         loading="lazy"
-        src={method.template.url.replace(":webp", ":png")}
         alt={"Voorbeeld van " + method.title}
         class={method.categories[0].title.replaceAll(" ", "-")}
-      />
+      >
+        <source
+          srcset={method.template.url.replace(":webp", ":avif")}
+          type="image/avif"
+        />
+        <source srcset={method.template.url} type="image/webp" />
+        <img
+          loading="lazy"
+          src={method.template.url.replace(":webp", ":png")}
+        />
+      </picture>
     {:else}
       <img
         loading="lazy"
@@ -100,7 +109,7 @@
     grid-area: button;
   }
 
-  button:hover { 
+  button:hover {
     background-color: var(--vtYellow-80);
   }
 
@@ -183,7 +192,6 @@
   }
 
   @container card (max-width: 420px) {
-
     button > span {
       display: none;
     }

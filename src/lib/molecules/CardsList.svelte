@@ -2,6 +2,8 @@
   import Card from "./Card.svelte";
 
   export let data;
+
+  console.log(data);
 </script>
 
 <section>
